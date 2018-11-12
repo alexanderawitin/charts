@@ -76,6 +76,10 @@ spec:
               value: "0.0.0.0:8080"
             - name: STKEEPER_DEBUG
               value: {{ .Values.debug | quote}}
+{{- range $key, $value := .Values.keeper.env }}
+            - name: {{ $key }}
+              value: {{ $value }}
+{{- end }}
           ports:
 {{- range $key, $value := .Values.ports }}
             - name: {{ $key }}

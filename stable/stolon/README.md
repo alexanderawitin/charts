@@ -55,6 +55,7 @@ Kubernetes is the default store backend. `consul`, `etcdv2` or `etcdv3` can also
 | `keeper.nodeSelector`                   | Node labels for keeper pod assignment          | `{}`                                                         |
 | `keeper.affinity`                       | Affinity settings for keeper pod assignment    | `{}`                                                         |
 | `keeper.tolerations`                    | Toleration labels for keeper pod assignment    | `[]`                                                         |
+| `keeper.env`                            | Additional environment variables               | `[]`                                                         |
 | `keeper.volumes`                        | Additional volumes                             | `[]`                                                         |
 | `keeper.volumeMounts`                   | Mount paths for `keeper.volumes`               | `[]`                                                         |
 | `proxy.replicaCount`                    | Number of proxy nodes                          | `2`                                                          |

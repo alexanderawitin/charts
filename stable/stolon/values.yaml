@@ -75,6 +75,7 @@ keeper:
   nodeSelector: {}
   affinity: {}
   tolerations: []
+  env: []
   volumes: []
   volumeMounts: []
 
